@@ -55,7 +55,7 @@ export const HabitsProvider = ({ children }) => {
     setHabits(prev => prev.filter(h => h.id !== id));
   };
 
-  // ✅ Met à jour une habitude
+  // on met à jour une habitude
   const updateHabit = (id, updates) => {
     setHabits(prev =>
       prev.map(habit =>
@@ -70,7 +70,7 @@ export const HabitsProvider = ({ children }) => {
       addHabit,
       markHabitAsDone,
       deleteHabit,
-      updateHabit // ✅ ne pas oublier de l’inclure ici
+      updateHabit
     }}>
       {children}
     </HabitsContext.Provider>
